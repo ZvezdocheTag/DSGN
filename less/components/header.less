@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+.header__container {
+  display: flex;
+  height: 500px;
+  background-color: #e9eae2;
+}
+
+.header__left-side {
+  flex: 1;
+}
+
+.header__right-side{
+  position: relative;
+  width: 31%;
+    background-color: #7acec3;
+
+  &:after { 
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  bottom: 50%;
+  transform: skewY(-40deg);
+
+}
+}
+
