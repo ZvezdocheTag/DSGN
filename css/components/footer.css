@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  min-height: 645px;
+  background-color: #e9eae2;
+}
+.footer__left {
+  flex: 1;
+}
+.footer__right {
+  flex: 1;
+}

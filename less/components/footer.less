@@ -1,35 +1,59 @@
 .footer {
-	position: relative;
-	background-color: #fff;
-	font-size: 12px;
-	color: @heading-color;
-	padding: 1px;
-	font-weight: 500;
+	display: flex;
+	min-height: 645px;
+	background-color: #e9eae2;
 
-	&__inner {
-		.inner_container();
-		text-align: center;
-	}
-	
-	&__center {
-		margin: 50px auto 40px auto; 
-
+	&__left {
+		flex: 1;
+		background: url(../../images/map.jpg) no-repeat 0 0;
 	}
 
+	&__right {
+		flex: 1;
+		font-family: @ff-main;
+		display: flex;
+		flex-wrap: wrap;
 
-	&__copyright--blue-link {
-	text-decoration: none;
-	color: #6dc5ea;
 	}
 
+	&__copyrights, &__contact, &__logo {
+		flex: 1 1 50%;
+	}
 
-	&__btn {
-		position: absolute;
-		top: 35px;
-		left: 95%;
+	&__copyrights {
+		margin-top: 80px;
+		font-weight: 500;
+		font-size: 1.1em;
+
+	}
+
+	&__contact--w135 {
+		max-width: 150px;
+	}
+
+	&__contact {
+		text-transform: uppercase;
+		font-weight: 500;
+		line-height: 1.2em;
+
+		p + p {
+			margin-top: 10px;
+		}
+
 	}
 
 }
+
+.f-r__inner {
+	  width: 73%;
+  margin: auto;
+  display: flex;
+  color: @item-color;
+  font-family: @ff-main;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 
 
 

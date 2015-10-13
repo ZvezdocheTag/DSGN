@@ -8,28 +8,31 @@
 
 	<meta charset="UTF-8">
 	<title>Start</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet/less" type="text/css" href="less/main.less">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
 
 </head>
 <body>
 	<header>
   <div class="header__container">
     <div class="header__left-side">
-      <div class="header_logo"></div>
-      <div class="header__slogan">ASSOCIATES STUDIO DESIGN</div>
-      <div class="header__social-icons">#
+      <a class="header_logo logo"></a>
+      <div class="header__slogan slogan">ASSOCIATES <br>STUDIO<br>DESIGN</div>
+      <div class="header__social-icons">
         <ul class="social-icons">
-          <li class="li"><a href="#"><i></i></a></li>
-          <li class="li"><a href="#"><i></i></a></li>
-          <li class="li"><a href="#"><i></i></a></li>
-          <li class="li"><a href="#"><i></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-google-plus"></i></a></li>
         </ul>
       </div>
     </div>
     <div class="header__right-side">
       <div class="header__navigation">
-        <div class="header__burger-btn"><i class="burger-btn"></i></div>
+        <div class="header__burger-btn"><a class="burger-btn"></a></div>
         <nav class="header__menu">
           <ul class="menu__container">
             <li><a href="">home</a></li>
@@ -42,11 +45,12 @@
         </nav>
       </div>
       <div class="header__adress">90802 California
-Long beach
-PO Box 68789
-300 East Ocean 
-Boulevard</div>
-      <div class="header__contacts">+64 9 345 6758
+                                  Long beach <br>
+                                  PO Box 68789
+                                  300 East Ocean 
+                                  Boulevard
+      </div>
+      <div class="header__contacts">+64 9 345 6758 <br>
 info@dsgn-studio.com</div>
     </div>
   </div>
@@ -57,114 +61,159 @@ info@dsgn-studio.com</div>
   <div class="projects__left-side">
     <section class="projects__section-1">
     <div class="projects__left-item-1">
-      <h2 class="projects__title"></h2>
       <nav class="projects__nav-container">
         <ul class="navigation__nav">
-          <li><a class="nav--active" ref="">all</a></li>
-          <li><a href="">house</a></li>
-          <li><a href="">commercial</a></li>
-          <li><a href="">personal</a></li>
-          <li><a href="">studio lab</a></li>
+          <li class="nav-item--active"><a class="navigation__link nav--active" ref="">all</a></li>
+          <li ><a class="navigation__link" href="">house</a></li>
+          <li><a class="navigation__link" href="">commercial</a></li>
+          <li><a class="navigation__link" href="">personal</a></li>
+          <li><a class="navigation__link" href="">studio lab</a></li>
         </ul>
       </nav>
+       <h2 class="projects__title section__title">projects</h2>
     </div>
-    <div class="projects__left-item-2">
-      <div class="item-2__inner">
-        <h2 class="item-2__title"></h2>
-        <div class="item-2__descriptions "></div>
-        <div class="item-2__btn">
-          <a class="item-btn"></a>
+    <div class="projects__left-item-2 item ">
+      <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">fondue</h2>
+          <p class="item__text"><b>Project</b> Assistant: Francesco Dompieri</p>
+          <p class="item__text"><b>Material</b>: Glass and Metal</p>
+          <p class="item__text"><b>Typology</b>: Suspension lamp</p>
+          <p class="item__text"><b>Client</b>: David Design</p>
+          <p class="item__text"><b>Year</b>: 2014</p> 
         </div>
-        <div class="item-2__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>     
       </div>
+      <img  class="img_pos" src="images/chandalier.png" alt="">
     </div>
     </section>
     <section class="projects__section-2">
-    <div class="projects__left-item-3">
-      <div class="item-3__inner">
-        <h2 class="item-3__title"></h2>
-        <div class="item-3__descriptions "></div>
-        <div class="item-3__btn">
-          <a class="item-btn"></a>
+    <div class="projects__left-item-3 item">
+       <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">louis xx</h2>
+         <p class="item__text"><b>designer</b>: philippe starck</p> 
+         <p class="item__text"><b>ypology</b>: chairs</p> 
+         <p class="item__text"><b>Client</b>: vitra</p>  
+         <p class="item__text"><b>Year</b>: 2012 </p>    
         </div>
-        <div class="item-3__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>
       </div>
+              <img  class="img_pos" src="images/black_seat.png" alt="">
     </div>
-    <div class="projects__left-item-4">
-      <div class="item-4__inner">
-        <h2 class="item-4__title"></h2>
-        <div class="item-4__descriptions "></div>
-        <div class="item-4__btn">
-          <a class="item-btn"></a>
+    <div class="projects__left-item-4 item">
+      <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">395-396 P22</h2>
+         <p class="item__text"><b>Designer</b>: Patrick Norguet</p> 
+         <p class="item__text"><b>Typology</b>: ARMchairs</p> 
+         <p class="item__text"><b>Client</b>: Cassina</p>
+         <p class="item__text"><b>Year</b>: 2013 </p> 
         </div>
-        <div class="item-4__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>
       </div>
+              <img  class="img_pos" src="images/brown_chair.png" alt="">
     </div>
     </section>
     <section class="projects__section-3">
-    <div class="projects__left-item-5">
-      <div class="item-5__inner">
-        <h2 class="item-5__title"></h2>
-        <div class="item-5__descriptions "></div>
-        <div class="item-5_btn">
-          <a class="item-btn"></a>
+    <div class="projects__left-item-5 item">
+      <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">Sesann</h2>
+          <p class="item__text"><b>designer</b>: Gianfranco Frattini</p> 
+          <p class="item__text"><b>Typology</b>: armchairs</p>
+          <p class="item__text"><b>Client</b>: cassina</p>
+          <p class="item__text"><b>Year</b>: 1970</p>
         </div>
-        <div class="item-5__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>     
+      </div>
+            <img  class="img_pos" src="images/black_puf.png" alt="">  
+    </div>
+    <div class="projects__left-item-6 item">
+      <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">Alessi</h2>
+         <p class="item__text"> <b>Client</b>: Alessi</p>
+         <p class="item__text"> <b>designer</b>: Piero Lissoni</p>
+         <p  class="item__text"> <b>Year</b>: 2013</p>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div> 
       </div>
     </div>
-    <div class="projects__left-item-6">
-      <div class="item-6__inner">
-        <h2 class="item-6__title"></h2>
-        <div class="item-6__descriptions "></div>
-        <div class="item-6__btn">
-          <a class="item-btn"></a>
-        </div>
-        <div class="item-6__rate"><i class="heart"></i><span class="count"></span></div>
-      </div>
-    </div>
+        <img  class="img_pos" src="images/headphone.png" alt="">
+</div>
     </section>
   </div>
   <div class="projects__right-side">
-    <div class="projects__item projects__right-item-7">
-      <div class="item-7__inner">
-        <h2 class="item-7__title"></h2>
-        <div class="item-7__descriptions "></div>
-        <div class="item-7__btn">
-          <a class="item-btn"></a>
+    <div class="projects__item projects__right-item-7 item">
+      <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">potter</h2>
+          <b>FOR STELTON</b>
+          <p class="item__text">Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.</p> 
         </div>
-        <div class="item-7__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>      
       </div>
+      <img  class="img_pos" src="images/teapot.png" alt="">
     </div>
-    <div class="projects__item projects__right-item-8">
-      <div class="item-8__inner">
-        <h2 class="item-8__title"></h2>
-        <div class="item-8__descriptions "></div>
-        <div class="item-8__btn">
-          <a class="item-btn"></a>
+    <div class="projects__item projects__right-item-8 item">
+    <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">tabano</h2>
+          <p class="item__text"><b>DESIGNER</b>: PATRICIA URQUIOLA</p> 
+          <p class="item__text"><b>Typology</b>: Armchairs</p>
+          <p class="item__text"><b>Client</b>: B&ampB ITALIA</p>
+          <p class="item__text"><b>Year</b>: 2014 </p>
         </div>
-        <div class="item-8__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>
       </div>
+              <img  class="img_pos" src="images/green__chair.png" alt="">
     </div>
-    <div class="projects__item projects__right-item-9">
-      <div class="item-9__inner">
-        <h2 class="item-9__title"></h2>
-        <div class="item-9__descriptions "></div>
-        <div class="item-9__btn">
-          <a class="item-btn"></a>
+    <div class="projects__item projects__right-item-9 item">
+      <div class="item__inner">
+        <div class="item__descriptions">
+        <h2 class="item__title">FIJI</h2>
+          <p class="item__text"><b>designer</b>: Cuno Frommherz </p>
+          <p class="item__text"><b>Typology</b>: armchairs</p>
+          <p class="item__text"><b>Year</b>: 2012</p>
         </div>
-        <div class="item-9__rate"><i class="heart"></i><span class="count"></span></div>
+        <div class="item__btn">
+          <a class="item-btn">view project</a>
+        </div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>  
       </div>
+      <img  class="img_pos" src="images/yellow_chair.png" alt="">
     </div>
     <div class="projects__item projects__right-item-10">
       <div class="item-10__inner">
         <h2 class="item-10__title">timeline</h2>
         <nav class="item-10__container">
           <ul class="navigation__nav">
-          <li><a class="nav--active" ref="">2014</a></li>
-          <li><a href="">2013</a></li>
-          <li><a href="">2012</a></li>
-          <li><a href="">2011</a></li>
-          <li><a href="">2010</a></li>
+          <li class="nav-item--active"><a class="navigation__link nav--active" ref="">2014</a></li>
+          <li><a class="navigation__link" href="">2013</a></li>
+          <li><a class="navigation__link" href="">2012</a></li>
+          <li><a class="navigation__link" href="">2011</a></li>
+          <li><a class="navigation__link" href="">2010</a></li>
         </ul>
         </nav>
       </div>
@@ -177,26 +226,26 @@ info@dsgn-studio.com</div>
   <div class="about__inner">
     <div class="about__top">
       <div class="about__title">
-        <h2 class="about__name">studio</h2>
+        <h2 class="about__name section__title">studio</h2>
       </div>
       <div class="about__descriptions">
-        <div class="about__studio">
+      <div class="dscrp__inner">
+        <div class="studio">
           <p class="studio__dscr">
-            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin eros sit amet nulla rhoncus dictum. 
+            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin eros sit amet nulla rhoncus dictum. <br>
+Nam rhoncus fringilla dolor vitae vulputate. Nullam quis eros lorem. Integer cursus erat a orci congue feugiat. Cras rhoncus mollis libero, id aliquet purus varius sed.</b></p> 
 
-Nam rhoncus fringilla dolor vitae vulputate. Nullam quis eros lorem. Integer cursus erat a orci congue feugiat. Cras rhoncus mollis libero, id aliquet purus varius sed.</b>
+            <p>Aenean ullamcorper porta nisl, ac lobortis elit commodo placerat. <br>
 
-            Aenean ullamcorper porta nisl, ac lobortis elit commodo placerat. 
+Vivamus eget laoreet enim. Sed nunc dui, egestas vel diam convallis, faucibus iaculis sapien. Sed ut vulputate nisi.<br>
 
-Vivamus eget laoreet enim. Sed nunc dui, egestas vel diam convallis, faucibus iaculis sapien. Sed ut vulputate nisi. 
-
-Proin tempor risus tellus. Maecenas sit amet fringilla urna, vel iaculis velit. Sed ac felis et sem mollis dictum sed id orci.
-          </p>
+Proin tempor risus tellus. Maecenas sit amet fringilla urna, vel iaculis velit. <br> Sed ac felis et sem mollis dictum sed id orci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quae! </p>
+          
         </div>
-        <div class="about__awards">
+        <div class="awards">
           <img src="images/office_photo.jpg" width="360" height="200" alt="" class="office__photo">
           <div class="awards__dscr">
-            <h3 class="awars__title">awards</h3>
+            <h3 class="awards__title">awards</h3>
             <div class="awards__name"><p>Aenean ullamcorper porta nisl,
             ac lobortis elit 
             commodo placerat. 
@@ -210,73 +259,149 @@ Proin tempor risus tellus. Maecenas sit amet fringilla urna, vel iaculis velit. 
           </div>
           </div>
         </div>
+        </div> 
       </div>
     </div>
-    <div class="about__staff">
-      <div class="staff">
-        <div class="staff__dscr">
-          <h3 class="staff__title">staff</h3>
+    <div class="staff">
+      <div class="staff__inner">
+        <div class="staff__item staff__dscr">
+          <h3 class="staff__title">staff.</h3>
           <p class="staff__text">
-            STAFF.
+Sit amet laoreet sapien dictum. Sed eget eros augue. Pellentesque tempor mi sit amet nisi tincidunt tincidunt. Fusce malesuada lectus sed mauris pharetra faucibus. <br>
 
-Sit amet laoreet sapien dictum. Sed eget eros augue. Pellentesque tempor mi sit amet nisi tincidunt tincidunt. Fusce malesuada lectus sed mauris pharetra faucibus. 
-
-Aenean diam tortor, hendrerit ac pulvinar vel, condimentum ac velit. Phasellus eu odio elit. Aenean volutpat mi quam, ut ornare augue tempus ut. 
+Aenean diam tortor, hendrerit ac pulvinar vel, condimentum ac velit. Phasellus eu odio elit. Aenean volutpat mi quam, ut ornare augue tempus ut.  <br>
 
 Morbi sagittis diam mauris, in adipiscing nulla convallis ut.
-          </p>
+</p> 
+          
         </div>
-        <div class="staff__gallery">
           <div class="staff__item">
+           <div class="staff-item__inner">
             <img src="images/staff__photo-1.jpg" width="270" height="150" alt="" class="staff__photo">
-            <div class="staff__name"></div>
+            <div class="staff__name"><b>philip stark</b></div>
+            <div class="staff__role">designer</div>
             <div class="staff__link">
               <div class="staff__cv"></div>
               <div class="staff__social-icon"> 
                <ul class="social-icons">
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-               </ul>
+                  <li class="soc-ic__item cv"><a class="soc-ic__link cv__item" href="#">CV</a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
               </div> 
+            </div>
             </div>
           </div>
           <div class="staff__item">
-            <img src="images/staff__photo-2.jpg"  width="270" height="150" alt="" class="staff__photo">
-            <div class="staff__name"></div>
+           <div class="staff-item__inner">
+            <img src="images/staff__photo-2.jpg" alt="" class="staff__photo">
+            <div class="staff__name"><b>mario bellini</b></div>
+            <div class="staff__role">designer</div>
             <div class="staff__link">
-              <div class="staff__cv"></div>
               <div class="staff__social-icon"> 
-               <ul class="social-icons">
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-               </ul>
+                 <ul class="social-icons">
+                  <li class="soc-ic__item cv"><a class="soc-ic__link cv__item" href="#">CV</a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
               </div> 
             </div>
+            </div>  
           </div>
           <div class="staff__item">
-            <img src="images/staff__photo-3.jpg" alt=""  width="270" height="150" class="staff__photo">
-            <div class="staff__name"></div>
-            <div class="staff__link">
-              <div class="staff__cv"></div>
-              <div class="staff__social-icon"> 
-               <ul class="social-icons">
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-                  <li class="li"><a href="#"><i></i></a></li>
-               </ul>
-              </div> 
-            </div>
+          <div class="staff-item__inner">
+               <img src="images/staff__photo-3.jpg" alt=""  width="270" height="150" class="staff__photo">
+                <div class="staff__name"><b>patricia uriquola</b></div>
+                 <div class="staff__role">designer</div>
+                   <div class="staff__link">
+                   <div class="staff__cv"></div>
+                   <div class="staff__social-icon"> 
+                    <ul class="social-icons">
+                     <li class="soc-ic__item cv"><a class="soc-ic__link cv__item" href="#">CV</a></li>
+                     <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                     <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                     <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-linkedin"></i></a></li>
+                     <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+               </div> 
+             </div>
           </div>
-        </div>
+          </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<section class="news">
+  <div class="news__inner">
+    <div class="news__left">
+      <h2 class="news__title section__title">news</h2>
+    </div>
+    <div class="news__right">
+      <div class="news-right__inner">
+        <div class="news__item">
+        <h2 class="n-right__title">Mauris et dui sed justo placerat tristique. </h2>
+        <div class="n-right__date">11.07.2014</div>
+        <img src="images/news_item-1.jpg" alt="" class="n-right__img">
+        <div class="n-right__text">Maecenas imperdiet nisi lorem, sed fermentum tortor pretium eget. Sed mollis lacus quis nunc cursus cursus. Quisque et magna sit amet sapien fermentum scelerisque eu id massa. Mauris ornare massa vel mauris tempus, vitae tempus urna tincidunt. </div>
+        <div class="n-right__link"><a class="n-right__link" href="">read more</a></div>
+      </div>
+      <div class="news__item news__item-2">
+        <h2 class="n-right__title nr-i2__title">Proin vehicula nibh massa </h2>
+        <div class="n-right__date">11.05.2014</div>
+        <img src="images/news_item-2.jpg" alt="" class="n-right__img">
+        <div class="n-right__text">Praesent non mauris nec orci scelerisque faucibus. Nulla ac varius est. Aenean auctor nisl elit, nec sollicitudin lectus iaculis sed. Maecenas aliquam ligula vitae pharetra scelerisque. 
+         </div>
+        <div class="n-right__link"><a class="n-right__link" href="">read more</a></div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer__left">
+    <img src="" alt="" class="footer__map">
+  </div>
+  <div class="footer__right">
+  <div class="f-r__inner">
+    <div class="footer__contact">
+      <div class="footer__contact--w135">
+          <p>90802 California <br>
+          Long beach <br> 
+          PO Box 68789 <br>
+          300 East Ocean <br>
+          Boulevard</p>
+      <p>
+        +64 9 345 6758
+        info@dsgn-studio.com
+      </p>
+      </div>
+    </div>
+    <div class="footer__logo">
+      <a class="logo"></a>
+    <div class="footer__slogan slogan">ASSOCIATES <br>STUDIO<br>DESIGN</div>
+    <div class="footer__social-icons">
+      <ul class="social-icons">
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+      <div class="footer__copyrights">2014  DSGN. All rights reserved - Designed by theuncreativelab.com</div>
+      </div>
+  </div>
+</footer>
 	<script href="less.min.js" type="text/javascript"></script>
 </body>
 </html>
