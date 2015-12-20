@@ -2,12 +2,28 @@
   position: relative;
   width: 100%;
   background-color: #e9eae2;
+  
+    @media only screen 
+      and (max-width: 568px)
+       { 
+        
+        display: none;
+       
+      }
 
 
 
   &__top {
     min-height: @main-height;
     display: flex;
+    
+      @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      min-height: 350px;
+       
+      }
 
  
   }
@@ -78,6 +94,15 @@
 
     p + p {
       margin-left: 8%;
+      
+        @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      display: none;
+       
+      }
+      
     }
   }
   &__name p {
@@ -88,6 +113,16 @@
     text-transform: uppercase;
     font-size: 0.8em;
     line-height: 1.1em;
+    
+      @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+        width: 85%;
+       
+      }
+    
+
 
 
   }
@@ -96,6 +131,17 @@
   
 
   }
+
+ .about__second-text {
+
+    @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      display: none;
+       
+      }
+ }
 
 
 
@@ -107,6 +153,14 @@
   color: @item-color;
   font-family: @ff-main;
   font-size: 1em;
+  
+      @media only screen
+      and (min-width: 320px) 
+      and (max-width: 568px)
+       { 
+       display: none;
+       
+      }
   
   
   &__title {
@@ -123,6 +177,14 @@
      width: 76%;
     margin: auto;
     display: flex;
+    
+      @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      width: 85%;
+       
+      }
   }
   &__item {
     flex: 1;
@@ -139,10 +201,26 @@
     color: @link-color;
     margin-right: 15px;
     font-size: 1.1em;
+    
+      @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      margin-right: 10px;
+       
+      }
   }
 
   &__item + &__item {
   margin-left: 2%;
+  
+    @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      margin-left: 0%;
+       
+      }
 }
 
 &__name, &__role {
@@ -174,4 +252,14 @@
 .staff-item__inner {
   width: 100%;
   padding-left: 20%;
+}
+
+.staff__dscr {
+    @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      display: none;
+       
+      }
 }

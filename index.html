@@ -10,13 +10,13 @@
 	<title>Start</title>
 
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'> 
-	<link rel="stylesheet/less" type="text/css" href="less/main.less">
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
 
 </head>
 <body>
-	<header>
+	<header class="header">
   <div class="header__container">
     <div class="header__left-side">
       <a class="header_logo logo"></a>
@@ -32,15 +32,17 @@
     </div>
     <div class="header__right-side">
       <div class="header__navigation">
+        <h2 class="logo-mobile">DSGN <br>  <span class="logo-mobile__slogan">ASSOCIATES STUDIO DESIGN </span> </h2>
+
         <div class="header__burger-btn"><a class="burger-btn"></a></div>
-        <nav class="header__menu">
+        <nav class="header__menu menu">
           <ul class="menu__container">
-            <li><a href="">home</a></li>
-            <li><a href="">projekts</a></li>
-            <li><a href="">studio</a></li>
-            <li><a href="">news</a></li>
-            <li><a href="">contact</a></li>
-            <li><a calss="menu__cross"href=""><i></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="">home</a></li>
+            <li class="menu__item"><a class="menu__link" href="">projekts</a></li>
+            <li class="menu__item"><a class="menu__link" href="">studio</a></li>
+            <li class="menu__item"><a class="menu__link" href="">news</a></li>
+            <li class="menu__item"><a class="menu__link" href="">contact</a></li>
+            <li class="menu__item"><a class="menu__link menu__cross" href=""></a></li>
           </ul>
         </nav>
       </div>
@@ -58,9 +60,48 @@ info@dsgn-studio.com</div>
 
 
 <section class="projects">
+  <div class="item-page item-page--hide">
+    <div class="item-page__inner">
+      <div class="item-page__btn">
+        <a href="" class="btn__close btn__close--right"></a>
+      </div>
+      <div class="item-page__content">
+         <div class="item__descriptions">
+          <h2 class="item__title">fondue</h2>
+            <p class="item__text"><b>Project</b> Assistant: Francesco Dompieri</p>
+            <p class="item__text"><b>Material</b>: Glass and Metal</p>
+            <p class="item__text"><b>Typology</b>: Suspension lamp</p>
+            <p class="item__text"><b>Client</b>: David Design</p>
+            <p class="item__text"><b>Year</b>: 2014</p> 
+          </div>
+          <div class="item-page__description">
+            <p>Merging different traditions – the South European and the North European – in the field of household suspended lights is the starting point of Fondue, a lamp designed by Luca Nichetto for the Swedish David Design. The inspiration comes from the observation of pot bellied traditional fondue cauldrons, which were kept suspended above a heat source for the cheese to slowly melt. Similarly, the pot bellied glass diffuser is suspended, supported by a slender metal frame enclosing the light source.
+
+            One of Fondue’s peculiarities is the solution designed for the output of the power cable, which is generally concealed or made less evident. Instead, here it becomes a feature of the lamp, located in its lower part, which allows the power source to be released from the fixing point in the ceiling.This makes Fondue easily adaptable to various architectural situations.</p>
+          </div>
+         
+            <ul class="gallery__container clearfix">
+              <li class="gallery__item"><a class="gallery__btn gallery__btn--left"  href=""></a></li>
+              <li class="gallery__item"><img class="gallery__img" src="images/chandalier.png"  alt=""></li>
+              <li class="gallery__item"><img class="gallery__img"  src="images/chandalier.png" width="100" height="100" alt=""></li>
+              <li class="gallery__item"><a class="gallery__btn gallery__btn--right" href=""></a></li>
+            </ul>
+          
+             <div class="item-page__social-icons">
+                <ul class="social-icons clearfix">
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li class="soc-ic__item"><a class="soc-ic__link" href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+             </div>
+      </div>
+      <img class="item-page__img" src="images/chandalier-big.jpg" width="611" height="815" alt="">
+    </div>
+  </div>
   <div class="projects__left-side">
     <section class="projects__section-1">
-    <div class="projects__left-item-1">
+    <div class="projects__left-item-1 item">
       <nav class="projects__nav-container">
         <ul class="navigation__nav">
           <li class="nav-item--active"><a class="navigation__link nav--active" ref="">all</a></li>
@@ -85,7 +126,7 @@ info@dsgn-studio.com</div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>     
+        <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div>     
       </div>
       <img  class="img_pos" src="images/chandalier.png" alt="">
     </div>
@@ -102,8 +143,8 @@ info@dsgn-studio.com</div>
         </div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
+          <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div>
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>
       </div>
               <img  class="img_pos" src="images/black_seat.png" alt="">
     </div>
@@ -118,8 +159,9 @@ info@dsgn-studio.com</div>
         </div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
+          <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div>
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>
+        
       </div>
               <img  class="img_pos" src="images/brown_chair.png" alt="">
     </div>
@@ -136,13 +178,14 @@ info@dsgn-studio.com</div>
         </div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
+          <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div> 
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>     
+            
       </div>
             <img  class="img_pos" src="images/black_puf.png" alt="">  
     </div>
     <div class="projects__left-item-6 item">
-      <div class="item__inner">
+      <div class="item__inner crearfix">
         <div class="item__descriptions">
         <h2 class="item__title">Alessi</h2>
          <p class="item__text"> <b>Client</b>: Alessi</p>
@@ -150,8 +193,8 @@ info@dsgn-studio.com</div>
          <p  class="item__text"> <b>Year</b>: 2013</p>
         <div class="item__btn">
           <a class="item-btn">view project</a>
+          <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div> 
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div> 
       </div>
     </div>
         <img  class="img_pos" src="images/headphone.png" alt="">
@@ -163,13 +206,14 @@ info@dsgn-studio.com</div>
       <div class="item__inner">
         <div class="item__descriptions">
         <h2 class="item__title">potter</h2>
-          <b>FOR STELTON</b>
+          <b>FOR</b> STELTON
           <p class="item__text">Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.</p> 
         </div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
+          <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div>   
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>      
+           
       </div>
       <img  class="img_pos" src="images/teapot.png" alt="">
     </div>
@@ -185,7 +229,8 @@ info@dsgn-studio.com</div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
         </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>
+        <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div>
+       
       </div>
               <img  class="img_pos" src="images/green__chair.png" alt="">
     </div>
@@ -199,8 +244,8 @@ info@dsgn-studio.com</div>
         </div>
         <div class="item__btn">
           <a class="item-btn">view project</a>
-        </div>
-        <div class="item__rate"><i class="fa fa-heart-o"></i><span class="count">+200</span></div>  
+          <div class="item__rate"><i class="fa fa-heart-o"></i><br><span class="count">+200</span></div> 
+        </div>   
       </div>
       <img  class="img_pos" src="images/yellow_chair.png" alt="">
     </div>
@@ -235,7 +280,7 @@ info@dsgn-studio.com</div>
             <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin eros sit amet nulla rhoncus dictum. <br>
 Nam rhoncus fringilla dolor vitae vulputate. Nullam quis eros lorem. Integer cursus erat a orci congue feugiat. Cras rhoncus mollis libero, id aliquet purus varius sed.</b></p> 
 
-            <p>Aenean ullamcorper porta nisl, ac lobortis elit commodo placerat. <br>
+            <p class="about__second-text">Aenean ullamcorper porta nisl, ac lobortis elit commodo placerat. <br>
 
 Vivamus eget laoreet enim. Sed nunc dui, egestas vel diam convallis, faucibus iaculis sapien. Sed ut vulputate nisi.<br>
 
@@ -281,7 +326,6 @@ Morbi sagittis diam mauris, in adipiscing nulla convallis ut.
             <div class="staff__name"><b>philip stark</b></div>
             <div class="staff__role">designer</div>
             <div class="staff__link">
-              <div class="staff__cv"></div>
               <div class="staff__social-icon"> 
                <ul class="social-icons">
                   <li class="soc-ic__item cv"><a class="soc-ic__link cv__item" href="#">CV</a></li>
@@ -318,7 +362,6 @@ Morbi sagittis diam mauris, in adipiscing nulla convallis ut.
                 <div class="staff__name"><b>patricia uriquola</b></div>
                  <div class="staff__role">designer</div>
                    <div class="staff__link">
-                   <div class="staff__cv"></div>
                    <div class="staff__social-icon"> 
                     <ul class="social-icons">
                      <li class="soc-ic__item cv"><a class="soc-ic__link cv__item" href="#">CV</a></li>

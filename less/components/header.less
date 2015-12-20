@@ -4,69 +4,94 @@ body {
   overflow-x: hidden; 
 }
 
-.header__container {
+.header {
+  position: relative;
+
+  &__container {
   display: flex;
   min-height: @main-height;
   background-color: #e9eae2;
+  
+  @media only screen
+      and (max-width: 568px)
+       { 
+       flex-direction: column;
+        align-items:stretch;
+        min-height: 100%;
+       
+      }
 
 }
 
-.header__left-side {
+  &__left-side {
   flex: 1;
   background: url(../../images/chair.jpg) no-repeat 80% 0;
   padding-left: @padding-left;
   font-family: @ff-main;
+  
+   @media only screen
+      and (max-width: 568px)
+       { 
+        display: none;
+        
+      }
 }
 
-.header__right-side{
+  &__right-side{
   background-color: #7acec3;
   width: 31%;
-  .title__block 
+  .title__block; 
+
+   @media only screen
+      and (max-width: 568px)
+       { 
+      width: 100%;
+      
+          
+      }
+
+
   
 }
 
-.header_logo {
-margin-top: 3.125em;
-
-}
-
-.header__social-icons i,.footer__social-icons i {
-  font-size: 2.6em;
-  margin-left: 5px;
-  color: #7bcbc1;
+  &__navigation {
+    position: relative;
+    display: flex;
+    
+      @media only screen
+      and (max-width: 568px)
+       { 
+        justify-content: space-between;
+        margin: 10px auto;
+        
+          
+      }
   
-  &.fa-facebook {
-    font-size: 2em;
-  }
-
-  &.fa-google-plus {
-    font-size: 2em;
-  }
-
 
 }
 
-.header__social-icons, .footer__social-icons {
-  margin-left: 1.25em;
-  margin-top: 3.75em;
-}
-
-.header__navigation {
-  display: flex;
-}
-
-
-.header__burger-btn {
-  margin: 0 auto;
-  margin-top: 3.125em;
-
-}
-
-.header__menu {
+  &__menu {
   display: none;
 }
 
-.header__adress {
+  &__burger-btn {
+  margin: 0 auto;
+  margin-top: 3.125em;
+  
+    @media only screen
+      and (max-width: 568px)
+       { 
+        
+        margin: 10px 30px 10px;
+        
+          
+      }
+  
+
+
+}
+
+  &__adress {
   font-family: @ff-main;
   max-width: 110px;
   text-transform: uppercase;
@@ -74,13 +99,91 @@ margin-top: 3.125em;
   margin-top: 5.5em;
   margin-left: 13%;
   font-size: @main-font-s;
+  
+   @media only screen 
+      and (max-width: 568px)
+       { 
+       display: none;
+       
+      }
 }
 
-.header__contacts {
+  &__contacts {
   color: #fff;
   text-transform: uppercase;
   font-family: @ff-main;
   margin-top: 2.45em;
   font-size: @main-font-s;
   margin-left: 32%;
+  
+   @media only screen 
+      and (max-width: 568px)
+       { 
+
+       display: none;
+       
+      }
+ }
 }
+
+.header_logo {
+margin-top: 3.125em;
+}
+
+.logo-mobile {
+  display: none;
+  
+   @media only screen 
+      and (max-width: 568px)
+       { 
+        margin: 25px 20px 0 20px;
+        font-size: 30px;
+        color: #FFF;
+        display: block;
+        line-height: 18px;
+        
+
+       
+      }
+
+     &__slogan {
+      
+      
+      @media only screen 
+      and (max-width: 568px)
+       { 
+
+       font-size: 10px;
+       font-weight: normal;
+        
+    
+       
+      }
+    }
+   
+  
+}
+
+.logo {
+  display: block;
+  width: 162px;
+  height: 207px;
+  background: url(../../images/logo.png) no-repeat;
+  
+ 
+}
+
+
+
+.slogan {
+  color: #393d3c;
+  font-size: @dscrp-font-s;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  
+}
+
+
+
+

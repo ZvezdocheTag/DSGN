@@ -1,0 +1,19 @@
+.header__social-icons i,
+.footer__social-icons i {
+  font-size: 2.6em;
+  margin-left: 5px;
+  color: #7bcbc1;
+}
+.header__social-icons i.fa-facebook,
+.footer__social-icons i.fa-facebook {
+  font-size: 2em;
+}
+.header__social-icons i.fa-google-plus,
+.footer__social-icons i.fa-google-plus {
+  font-size: 2em;
+}
+.header__social-icons,
+.footer__social-icons {
+  margin-left: 1.25em;
+  margin-top: 3.75em;
+}
