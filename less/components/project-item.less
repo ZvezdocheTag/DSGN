@@ -1,0 +1,85 @@
+.item {
+  position: relative;
+
+  &__inner {
+  position: relative;
+  padding: 2em;
+  z-index: 2;
+
+}
+
+&__descriptions {
+  position: relative;
+  text-transform: uppercase;
+  font-family: @ff-main;
+  color: @item-color;
+  z-index: 3;
+
+}
+
+&__title {
+  font-size: @h2-header;
+  font-weight: 400;
+  margin-bottom: 20px;
+
+}
+
+&__text {
+  line-height: 1em;
+
+}
+
+&__rate {
+  margin-top: 30px;
+  margin-left: 20px;
+
+  .fa-heart-o {
+    font-size: 22px;
+    cursor: pointer;
+
+    &:hover {
+      color: lighten(@item-color, 30%);
+
+    }
+  }
+
+  .count {
+  color: #ff5552;
+  font-size: 0.95em;
+
+ }
+}
+
+&-btn {
+  padding-left: 30px;
+  display: block;
+  font-family: @ff-main;
+  text-transform: uppercase;
+  font-size: @dscrp-font-s;
+  font-weight: 300;
+  background: url(../../images/yellow_arrow.png) no-repeat 0 50%;
+  cursor: pointer;
+}
+
+.img_pos {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

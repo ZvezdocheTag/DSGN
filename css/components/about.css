@@ -1,0 +1,9 @@
+.about {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #e9eae2;
+}
+.about__top {
+  min-height: 500px;
+}

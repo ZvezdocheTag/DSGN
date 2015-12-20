@@ -1,0 +1,142 @@
+.news {
+  background-color: #e5e9df;
+  min-height: @main-height;
+  
+
+  
+
+  &__inner {
+    display: flex;
+    min-height: @main-height;
+        @media only screen
+      and (max-width: 568px)
+       { 
+       flex-direction: column;
+        align-items:stretch;
+        width: 100%;
+       
+      }
+  }
+
+     &__left {
+  background-color: #d4edbf;
+  overflow: hidden;
+  width: 31%;
+  .title__block;
+  
+      @media only screen 
+      and (max-width: 568px)
+       { 
+        width: 100%;
+        margin-bottom: 20px;
+       
+      }
+
+     
+
+}
+    &__right {
+ flex: 1;
+ display: flex;
+
+}
+
+&__item + &__item  {
+  margin-left: 8%;
+   @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       {   
+        display: none;  
+      }
+
+  @media only screen
+      and (max-width: 568px)
+       { 
+
+        margin-left: 0;
+       
+      }
+
+}
+
+&__item {
+  max-width: 370px;
+   @media only screen
+      and (min-width: 320px) 
+      and (max-width: 568px)
+       { 
+        margin-bottom: 20px;
+        margin-left: 0;
+       
+      }
+}
+
+
+}
+
+.news-right__inner {
+   width: 73%;
+  margin: auto;
+  display: flex;
+  color: @item-color;
+  font-family: @ff-main;
+  
+    @media only screen 
+      and (max-width: 568px)
+       { 
+        margin: 5% auto;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        
+       
+      }
+
+
+
+}
+
+
+
+.n-right__title {
+  text-transform: uppercase;
+  min-height: 80px;
+
+}
+
+.nr-i2__title {
+  color: #cecece;
+}
+
+.n-right__img, .n-right__text {
+  margin-top: 20px;
+}
+
+.n-right__text {
+  font-size: @list-font-s;
+  min-height: 80px;
+  
+
+}
+
+
+.n-right__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @link-color;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.news__title.section__title {
+  
+  @media only screen
+      and (min-width: 320px) 
+      and (max-width: 568px)
+       { 
+        margin-right: 8%;
+        margin-top: 20%;
+       
+      }
+}
