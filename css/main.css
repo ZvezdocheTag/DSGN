@@ -401,7 +401,7 @@ img {
 }
 .about__name,
 .news__title {
-  margin-top: 75%;
+  margin-top: 68%;
   margin-right: 2em;
 }
 @media only screen and (max-width: 568px) {
@@ -1001,7 +1001,7 @@ img {
 }
 .news__inner {
   display: flex;
-  min-height: 500px;
+  height: 500px;
 }
 @media only screen and (max-width: 568px) {
   .news__inner {
