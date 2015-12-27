@@ -40,7 +40,14 @@
   &__descriptions {
     flex: 1;
     display: flex;
-
+    
+      @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      
+       
+      }
 
   }
 
@@ -48,6 +55,7 @@
 }
 
 .dscrp__inner {
+  padding: 20px 0;
   width: 73%;
   margin: auto;
   display: flex;
@@ -64,7 +72,16 @@
     flex: 1;
 
   &__dscr {
+
     font-style: italic;
+    
+      @media only screen
+      and (min-width: 768px) 
+      and (max-width: 1024px)
+       { 
+      display: none;
+       
+      }
   }
       p + p {
       margin-top: 1.8em;
@@ -174,6 +191,7 @@
   }
 
   &__inner {
+    padding: 20px 0;
      width: 76%;
     margin: auto;
     display: flex;
