@@ -15,6 +15,7 @@ body {
   .header__container {
     flex-direction: column;
     align-items: stretch;
+    min-height: 100%;
   }
 }
 .header__left-side {
@@ -45,9 +46,6 @@ body {
 }
 @media only screen and (max-width: 568px) {
 
-  .header__right-side {
-  min-height: 100px;
-}
 
   .header__right-side:after {
     display: none;
@@ -63,6 +61,8 @@ body {
 @media only screen and (max-width: 568px) {
   .header__right-side {
     width: 100%;
+    height: 100px;
+    min-height: 100px;
   }
 }
 .header__navigation {
