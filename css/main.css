@@ -13,10 +13,8 @@ body {
 }
 @media only screen and (max-width: 568px) {
   .header__container {
-
     flex-direction: column;
     align-items: stretch;
-    max-height: 110px;
   }
 }
 .header__left-side {
@@ -74,7 +72,6 @@ body {
 @media only screen and (max-width: 568px) {
   .header__navigation {
     justify-content: space-between;
-    margin: auto;
   }
 }
 .header__menu {
