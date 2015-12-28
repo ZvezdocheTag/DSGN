@@ -45,6 +45,9 @@ body {
 }
 @media only screen and (max-width: 568px) {
 
+  .header__right-side {
+  min-height: 100px;
+}
 
   .header__right-side:after {
     display: none;
@@ -60,7 +63,6 @@ body {
 @media only screen and (max-width: 568px) {
   .header__right-side {
     width: 100%;
-    min-height: 100px;
   }
 }
 .header__navigation {
@@ -81,9 +83,7 @@ body {
 }
 @media only screen and (max-width: 568px) {
   .header__burger-btn {
-    display: inline-block;
-    width: 48%;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 20px 10px 0;
     padding: 10px 20px;
   }
 }
@@ -128,12 +128,11 @@ body {
 }
 @media only screen and (max-width: 568px) {
   .logo-mobile {
-    width: 48%;
     margin: 0px 10px 0 10px;
     font-size: 30px;
     padding-top: 20px;
     color: #FFF;
-    display: inline-block;
+    display: block;
     line-height: 18px;
   }
 }
