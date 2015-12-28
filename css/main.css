@@ -122,8 +122,9 @@ body {
 }
 @media only screen and (max-width: 568px) {
   .logo-mobile {
-    margin: 25px 20px 0 20px;
+    margin: 0px 20px 0 20px;
     font-size: 30px;
+    padding-top: 20px;
     color: #FFF;
     display: block;
     line-height: 18px;
@@ -1051,7 +1052,7 @@ img {
   }
 }
 .news__right {
-  height: 500px;
+  min-height: 500px;
   flex: 1;
   display: flex;
 }
