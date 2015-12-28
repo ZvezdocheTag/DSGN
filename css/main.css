@@ -78,7 +78,7 @@ body {
 }
 @media only screen and (max-width: 568px) {
   .header__burger-btn {
-    margin: 10px 30px 10px;
+    margin: 10px 20px 10px;
   }
 }
 .header__adress {
@@ -122,7 +122,7 @@ body {
 }
 @media only screen and (max-width: 568px) {
   .logo-mobile {
-    margin: 0px 20px 0 20px;
+    margin: 0px 10px 0 10px;
     font-size: 30px;
     padding-top: 20px;
     color: #FFF;
@@ -1074,7 +1074,7 @@ img {
 }
 @media only screen and (max-width: 568px) {
   .news__item {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     margin-left: 0;
   }
 
